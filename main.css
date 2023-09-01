@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+/********************* Reaset *********************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/********************* Root *********************/
+:root {
+--Very-Dark-Magenta: hsl(300, 43%, 22%);
+--Soft-Pink: hsl(333, 80%, 67%);
+--Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+--Light-Grayish-Magenta: hsl(300, 24%, 96%);
+--White: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right 67vw bottom 50vh, left 60vw top -30vh;
+}
+
+main {
+    width: 1020px;
+}
+
+/* Start Container */ 
+/* Start Section 1 */
+.container {
+    max-width: 100%;
+}
+
+.container .section-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 2em; */
+}
+
+.container .section-1 .tittle {
+    width: 230px;
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--Very-Dark-Magenta);
+    margin-bottom: .5em;
+} 
+
+.container .section-1 .p-1 {
+    width: 350px;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    color: var(--Dark-Grayish-Magenta);
+}
+.container .rated {
+    width: 400px;
+    align-content: flex-end;
+}
+.container .rate-1 {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--Light-Grayish-Magenta);
+    margin-bottom: 20px;
+    padding: 13px;
+    border-radius: .6em;
+}
+
+.container .rate-1 .p-2 {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--Very-Dark-Magenta);
+}
+#rate-1-1 {
+    margin-left: -100px;
+}
+#rate-1-2 {
+    margin-left: -50px;
+}
+
+/* End Section 1 */
+/* Start Section 2 */
+.container .section-2 {
+    display: flex;
+    height: 100%;
+    gap: 30px;
+}
+
+.container .section-2 
+.Smith-card,
+.Irene-card,
+.Anne-Wallace 
+{
+    background-color: var(--Very-Dark-Magenta);
+    border-radius: 7px;
+    padding: 30px;
+    height: 100%;
+}
+.container .section-2 img {
+    border-radius: 50%;
+    width: 50px;
+}
+.container .section-2
+.smith-S,
+.irene-I,
+.anne-A 
+{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.container .section-2 .smith-S .Name .tittle {
+    color: var(--White);
+    font-weight: 700;
+    margin-bottom: 6px;
+    font-size: 1.3em;
+}
+.container .section-2 .smith-S .Name .p-3 {
+    color: var(--Soft-Pink);
+    font-size: 1.3em;
+    font-weight: 400;
+}
+.container .section-2 .Smith-card .p-4 {
+    margin-top: 1.6em;
+    line-height: 1.5;
+    color: var(--White);
+} 
+
+.container .section-2 .irene-I .Name .tittle {
+    color: var(--White);
+    font-weight: 700;
+    margin-bottom: 6px;
+    font-size: 1.3em;
+}
+.container .section-2 .irene-I .Name .p-3 {
+    color: var(--Soft-Pink);
+    font-size: 1.3em;
+    font-weight: 400;
+}
+.container .section-2 .Irene-card .p-4 {
+    margin-top: 1.6em;
+    line-height: 1.5;
+    color: var(--White);
+} 
+
+.container .section-2 .anne-A .Name .tittle {
+    color: var(--White);
+    font-weight: 700;
+    margin-bottom: 6px;
+    font-size: 1.3em;
+}
+.container .section-2 .anne-A .Name .p-3 {
+    color: var(--Soft-Pink);
+    font-size: 1.3em;
+    font-weight: 400;
+}
+.container .section-2 .Anne-Wallace .p-4 {
+    margin-top: 1.6em;
+    line-height: 1.5;
+    color: var(--White);
+} 
+
+.container .section-2 .Irene-card {
+    margin-top: 30px;
+}
+.container .section-2 .Anne-Wallace {
+    margin-top: 70px;
+}
+/* End Section 2 */
+
+/* End Container */ 
+
+/* Start Media */
+@media (max-width: 667px) {
+    main {
+        width: 300px;
+    }
+    .container {
+        width: 100%;
+    }
+    .section-1 {
+        flex-direction: column;
+    }
+    .container .section-1 .tittle {
+    width: 100%;
+    font-size: 20px;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 35px;
+    }
+    .container .section-1 .p-1 {
+        width: 100%;
+        text-align: center;
+    }
+    .section-2 {
+        flex-direction: column;
+    }
+    .container .rated {
+        margin-left: 80px; 
+    }
+    .container .rated .rate-1 {
+        width: 80%;
+        flex-direction: column;
+    }
+    .container #rate-1-1, #rate-1-2  {
+        margin-left: initial;
+    }
+.container .section-2
+.Irene-card,
+.Anne-Wallace {
+    margin-top: initial;
+}
+.container .section-2 .Anne-Wallace {
+    margin-top: 1px;
+}
+}
+/* End Media */
